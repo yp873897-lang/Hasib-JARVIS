@@ -1,0 +1,20 @@
+PHONE-ONLY BUILD GUIDE
+
+1) Create a GitHub repository named Hasib-JARVIS.
+2) Upload ALL files/folders inside this ZIP to the repository root. Do NOT upload the ZIP itself.
+3) Open the repository -> Actions.
+4) Select "Build Hasib JARVIS APK".
+5) Press "Run workflow" (or push to main/master; the workflow also runs automatically).
+6) Wait for the green check.
+7) Open the workflow run and scroll to Artifacts.
+8) Download "Hasib-JARVIS-debug-apk".
+9) Extract it and install the APK on Android.
+
+OPTIONAL API KEY
+- For transcription, add a GitHub Actions repository secret named OPENAI_API_KEY.
+- Settings -> Secrets and variables -> Actions -> New repository secret.
+- Never put your API key directly into source files or commit it to Git.
+
+IMPORTANT
+- This workflow builds a DEBUG APK for testing.
+- Google Play release signing is not configured.
